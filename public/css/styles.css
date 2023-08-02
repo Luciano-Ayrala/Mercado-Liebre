@@ -1,0 +1,349 @@
+:root {
+    --color1: #EAC926;
+    --color2: #03264C;
+    --color3: #1259c3;
+    --color4: #666;
+    --color5: #ebebeb;
+    --color6: #39b54a;
+    --color7: #000000;
+    --color8: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ebebeb;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* HEADER */
+header {
+    background-color: var(--color1);
+}
+
+.logo {
+    width: 150px;
+    margin: 30px 0 5px 30px;
+}
+
+.buscador{
+    display: flex;
+    margin: 10px 0 5px 20px;
+    width: 100%;
+    height: 20px;
+}
+
+.buscador_barra {
+    color: #666;
+    width: 200px;
+    border: 1px solid #666;
+}
+
+.buscador_logo {
+    background-color: #ebebeb;
+    width: 20px;
+    height: 20px;
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10%;
+    border: 1px solid #666;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.buscador_logo i {
+    color: #666;
+    font-size: 15px;
+}
+
+.Cuotas {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    margin: 10px 0;
+}
+
+nav{
+    margin: 10px 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+.lista{
+    display: flex;
+}
+
+.lista a{
+    margin-right: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.Burger-Menu {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 10%;
+    background-color: #1259c3;
+    color: #fff;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+}
+
+.Burger-Menu i {
+    font-size: 16px;
+    padding-top: 8px;
+}
+
+/* MAIN */
+main{
+    padding-bottom: 40px;
+}
+
+.banner{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contenedor_productos{
+    width: 100%;
+    background-color: #ebebeb;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 10px;
+}
+
+.productos_titulo{
+    width: 80%;
+    font-size: 1.5rem;
+    color: #666;
+    margin: auto;
+    text-align: left;
+    padding: 20px 0;
+}
+
+.productos_articulos {
+    background-color: var(--color5);
+    width: 80%;
+    max-width: 360px;
+    border: 1px solid #ebebeb;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 25px -10px #000000;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.articulos_imagenes{
+    width: 100%;
+    height: 100%;
+}
+
+.articulo_camion{
+    background-color: var(--color8);
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid var(--color6);
+    margin-top: -15px;
+    margin-left: 260px;
+    position: absolute;
+}
+
+.articulo_camion i{
+    color: var(--color6);
+    font-size: 16px;
+    padding-top: 5px;
+}
+
+.articulos_informacion{
+    background-color: #fff;
+    height: 100%;
+    padding: 10px;
+}
+
+.informacion_valor{
+    display: flex;
+    padding: 10px;
+}
+
+.valor_precio{
+    font-size: 18px;
+    display: inline;
+}
+
+.valor_descuento{
+    padding-left: 5px;
+    display: inline;
+    color: #39b54a;
+    font-size: 16px;
+}
+
+.informacion_titulo{
+    font-size: 1rem;
+    color: #666;
+    padding: 10px;
+}
+
+/* FOOTER */
+.contenedor_footer{
+    text-align: center;
+    justify-content: center;
+    background-color: var(--color8);
+    width: 100%;
+    padding: 30px;
+}
+
+.footer_seccion{
+    margin: auto;
+    width: 65%;
+    padding: 10px;
+}
+
+.seccion_icono{
+    color: var(--color3);
+    font-size: 2rem;
+}
+
+.seccion_titulo{
+    font-size: 14px;
+}
+
+.seccion_parrafo{
+    font-size: 12px;
+}
+
+.footer_copyright{
+    background-color: var(--color8);
+    text-align: center;
+    padding: 0 30px 40px 30px;
+}
+
+/* PEQUEÑO */
+@media (min-width: 425px){
+
+    /* MAIN */
+    .productos_articulos {
+        width: 320px;
+    }
+
+    /* FOOTER */
+    .footer_seccion{
+        margin: auto;
+        width: 276px;
+    }
+
+}
+
+/* MEDIO */
+@media (min-width: 768px) {
+
+    /* MAIN */
+    .banner{
+        height: 163px;
+    }
+
+    .contenedor_productos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 60px;
+        grid-gap: 30px;
+    }
+
+    .productos_titulo{
+        font-size: 2rem;
+    }
+
+    .valor_precio{
+        font-size: 22px;
+    }
+    
+    .valor_descuento{
+        font-size: 20px;
+    }
+    
+    .informacion_titulo{
+        font-size: 1.1rem;
+    }
+
+    /* FOOTER */
+    .contenedor_footer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 30px 100px;
+        grid-gap: 30px;
+    }
+
+    .footer_seccion:nth-child(3){
+        grid-column-start: span 2;
+    }
+
+}
+
+/* GRANDE */
+@media (min-width: 1024px) {
+
+    /* MAIN */
+    .banner{
+        height: 100%;
+    }
+
+    .contenedor_productos{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 0 80px;
+        grid-gap: 20px;
+    }
+
+    .productos_articulos {
+        width: 300px;
+    }
+
+    .articulo_camion{
+        margin-left: 240px;
+    }
+
+    /*FOOTER*/
+    .contenedor_footer{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 30px 100px;
+        grid-gap: 30px;
+    }
+
+    .footer_seccion{
+        width: 276px;
+    }
+
+    .footer_seccion:nth-child(3){
+        grid-column-start: span 1;
+    }
+    
+    .seccion_titulo{
+        font-size: 15px;
+    }
+    
+    .seccion_parrafo{
+        font-size: 14px;
+    }
+    
+    .footer_copyright{
+        font-size: 14px;
+        padding: 30px;
+    }
+
+}
