@@ -13,6 +13,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 
 body {
@@ -26,59 +28,99 @@ header {
     background-color: var(--color1);
 }
 
-.logo {
-    width: 150px;
-    margin: 30px 0 5px 30px;
+/* contenedor logo / barra / cuotas */
+.contenedor_header{
+    background-color: var(--color1);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 10px 15px 0 10px;
+    justify-content: center;
+    align-items: center;
 }
 
-.buscador{
+
+/* logo mercado liebre*/
+.header_logo {
+    width: 150px;
+    margin: auto;
+    justify-content: start;
+}
+
+
+/* barra buscador */
+.header_buscador{
+    background-color: var(--color8);
     display: flex;
-    margin: 10px 0 5px 20px;
-    width: 100%;
-    height: 20px;
+    width: 200px;
+    height: 39px;
+    border-radius: 5px;
+    margin: auto;
 }
 
 .buscador_barra {
+    background-color: var(--color8);
     color: #666;
-    width: 200px;
+    width: 180px;
     border: 1px solid #666;
+    display: inline;
+    height: 39px;
+    border: 0;
+    border-radius: 5px;
 }
 
 .buscador_logo {
-    background-color: #ebebeb;
+    background-color: var(--color8);
     width: 20px;
-    height: 20px;
+    height: 39px;
     font-size: 16px;
     text-align: center;
     justify-content: center;
-    border-radius: 10%;
-    border: 1px solid #666;
-    display: inline-block;
-    margin-left: 5px;
+    border-radius: 5px;
+    border: 0;
+    display: inline;
 }
 
 .buscador_logo i {
     color: #666;
     font-size: 15px;
+    margin-top: 12px;
 }
 
-.Cuotas {
+/* cuotas */
+.header_cuotas{
     text-align: center;
     justify-content: center;
     display: flex;
-    margin: 10px 0;
+    padding: 15px;
 }
 
-nav{
-    margin: 10px 0;
+.header_cuotas:nth-child(3){
+    grid-column-start: span 2;
 }
 
-li {
-    list-style-type: none;
+.cuotas_texto{
+    padding-left: 5px;
+    font-size: 0.9rem;
+}
+
+/* navegador */
+.contenedor_menu{
+    background-color: var(--color1);
+}
+
+.contenedor_nav{
+    background-color: var(--color1);
+    display: none;
 }
 
 .lista{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.lista li{
     display: flex;
+    margin: auto;
+    padding-bottom: 5px;
 }
 
 .lista a{
@@ -88,20 +130,25 @@ li {
 a {
     text-decoration: none;
     color: #000000;
+    font-size: .8rem;
 }
 
-.Burger-Menu {
+.contenedor_burguer{
+    padding: 15px 0;
+}
+
+.menu_burger{
     width: 2rem;
     height: 2rem;
     border-radius: 10%;
-    background-color: #1259c3;
+    background-color: var(--color3);
     color: #fff;
     margin: auto;
     text-align: center;
     align-items: center;
 }
 
-.Burger-Menu i {
+.menu_burger i {
     font-size: 16px;
     padding-top: 8px;
 }
@@ -233,6 +280,7 @@ main{
     padding: 0 30px 40px 30px;
 }
 
+
 /* PEQUEÑO */
 @media (min-width: 425px){
 
@@ -249,8 +297,75 @@ main{
 
 }
 
+
 /* MEDIO */
 @media (min-width: 768px) {
+
+    /* HEADER */
+    .contenedor_header{
+        grid-template-columns: repeat(3,1fr);
+        padding: 15px;
+    }
+
+    .header_buscador{
+        width: 80%;
+    }
+
+    .buscador_barra{
+        width: 100%;
+        text-align: start;
+        padding-left: 10px;
+    }
+
+    .buscador_logo{
+        width: 30px;
+    }
+
+    .header_cuotas{
+        padding: 0;
+    }
+
+    .header_cuotas:nth-child(3){
+        grid-column-start: span 1;
+    }
+
+    .cuotas_texto{
+        font-size: 0.7rem;
+    }
+
+    .contenedor_nav{
+        background-color: var(--color1);
+        display: flex;
+        width: 100%;
+        height: 65px;
+        align-items: center;
+        justify-content: center;
+        grid-gap: 100px;
+        padding: 0 10px 0 0;
+    }
+    
+    .lista{
+        display: flex;
+        grid-gap: 10px;
+        margin: auto;
+    }
+    .lista li{
+        display: flex;
+        margin: auto;
+        padding: 0;
+    }
+    
+    .lista a{
+        margin-right: 5px;
+    }
+
+    .contenedor_burguer{
+        display: none;
+    }
+
+    .menu_burger{
+        display: none;
+    }
 
     /* MAIN */
     .banner{
@@ -294,8 +409,27 @@ main{
 
 }
 
+
 /* GRANDE */
 @media (min-width: 1024px) {
+
+    /* HEADER */
+    .cuotas_texto{
+        font-size: 0.9rem;
+    }
+
+    .contenedor_nav{
+        grid-gap: 280px;
+        padding: 0;
+    }
+    
+    .lista li{
+        padding-right: 15px;
+    }
+    
+    .lista a{
+        margin-right: 5px;
+    }
 
     /* MAIN */
     .banner{

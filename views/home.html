@@ -13,67 +13,53 @@
 </head>
 <body>
     <header>
-
-
-        <img src="img/logo-mercado-liebre.svg" alt="Logo" class="logo">
-
-
-        <div class="buscador">
-            <button class="buscador_barra"><p>Buscar productos, marcas</p></button>
-            <div class="buscador_logo"><i class="fas fa-search"></i></div>
-        </div>
-
-
-        <div class="Cuotas">
-            <div><i class="fas fa-hand-holding-usd"></i></div>
-            <p>Comprá en cuotas y sin tarjeta de crédito</p>
-        </div>
-
-
-        <nav>
-            <ul>
-                <li><a href="">Ofertas</a></li>
-                <li><a href="">Tiendas Oficiales</a></li>
-                <li><a href="">Vender</a></li>
-                <li><a href="">Ayuda</a></li>
-            </ul>
-            <ul>
-                <li>
-                    <div class="lista">
+        <section class="contenedor_header">
+            <img src="img/logo-mercado-liebre.svg" alt="Logo" class="header_logo">
+            <div class="header_buscador">
+                <button type="text" class="buscador_barra">Buscar productos, marcas</button>
+                <div class="buscador_logo">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+            <div class="header_cuotas">
+                <i class="fas fa-hand-holding-usd"></i>
+                <p class="cuotas_texto">Comprá en cuotas y sin tarjeta de crédito</p>
+            </div>
+        </section>
+        <section class="contenedor_menu">
+            <nav class="contenedor_nav">
+                <ul class="lista">
+                    <li><a href="">Ofertas</a></li>
+                    <li><a href="">Tiendas Oficiales</a></li>
+                    <li><a href="">Vender</a></li>
+                    <li><a href="">Ayuda</a></li>
+                </ul>
+                <ul class="lista">
+                    <li>
                         <a href="">Creá tu cuenta</a>
                         <div><i class="fas fa-id-card"></i></div>
-                    </div>
-                </li>
-                <li>
-                    <div class="lista">
+                    </li>
+                    <li>
                         <a href="">Ingresá</a>
                         <div><i class="fas fa-sign-in-alt"></i></div>
-                    </div>
-                </li>
-                <li>
-                    <div class="lista">
+                    </li>
+                    <li>
                         <a href="">Mis compras</a>
                         <div><i class="fas fa-shopping-basket"></i></div>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-
-
-        <div class="Burger-Menu">
-            <i class="fas fa-bars"></i>
-        </div>
-
-
+                    </li>
+                </ul>
+            </nav>
+            <div class="contenedor_burguer">
+                <div class="menu_burger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </section>
     </header>
-
     <main>
         <img src="/img/img-home-banner.jpg" alt="banner_mercador_liebre" class="banner">
-
         <h1 class="productos_titulo">Basado en su última visita</h1>
-
         <section class="contenedor_productos">
-
             <article class="productos_articulos">
                 <img src="img/img-cafetera-moulinex.jpg" alt="Cafetera Moulinex" class="articulos_imagenes">
                 <div class="articulo_camion">
@@ -87,7 +73,6 @@
                     <h3 class="informacion_titulo">Cafetera Moulinex</h3>
                 </div>
             </article>
-            
             <article class="productos_articulos">
                 <img src="img/img-macbook-pro-2019.jpg" alt="MacBook Pro 2019" class="articulos_imagenes">
                 <div class="articulo_camion">
@@ -103,7 +88,6 @@
                     <h3 class="informacion_titulo">MacBook Pro 2019</h3>
                 </div>
             </article>
-
             <article class="productos_articulos">
                 <img src="img/img-samsung-galaxy-s10.jpg" alt="Samsung Galaxy S10" class="articulos_imagenes">
                 <div class="articulo_camion">
@@ -119,7 +103,6 @@
                     <h3 class="informacion_titulo">Samsung Galaxy S10</h3>
                 </div>
             </article>
-
             <article class="productos_articulos">
                 <img src="img/img-tv-samsung-smart.jpg" alt="SmartTv Samsung 43" class="articulos_imagenes">
                 <div class="articulo_camion">
@@ -133,13 +116,9 @@
                     <h3 class="informacion_titulo">SmartTv Samsung 43"</h3>
                 </div>
             </article>
-
         </section>
-
         <h2 class="productos_titulo">Ofertas</h2>
-
         <section class="contenedor_productos">
-
             <article class="productos_articulos">
                 <img src="img/img-cafetera-moulinex.jpg" alt="Cafetera Moulinex" class="articulos_imagenes">
                 <div class="articulo_camion">
@@ -153,7 +132,6 @@
                     <h3 class="informacion_titulo">Cafetera Moulinex</h3>
                 </div>
             </article>
-            
             <article class="productos_articulos">
                 <img src="img/img-macbook-pro-2019.jpg" alt="MacBook Pro 2019" class="articulos_imagenes">
                 <div class="articulo_camion">
@@ -167,7 +145,6 @@
                     <h3 class="informacion_titulo">MacBook Pro 2019</h3>
                 </div>
             </article>
-
             <article class="productos_articulos">
                 <img src="img/img-samsung-galaxy-s10.jpg" alt="Samsung Galaxy S10" class="articulos_imagenes">
                 <div class="articulo_camion">
@@ -181,7 +158,6 @@
                     <h3 class="informacion_titulo">Samsung Galaxy S10</h3>
                 </div>
             </article>
-
             <article class="productos_articulos">
                 <img src="img/img-tv-samsung-smart.jpg" alt="SmartTv Samsung 43" class="articulos_imagenes">
                 <div class="articulo_camion">
@@ -195,10 +171,8 @@
                     <h3 class="informacion_titulo">SmartTv Samsung 43"</h3>
                 </div>
             </article>
-
         </section>
     </main>
-
     <footer>
         <section class="contenedor_footer">
             <section class="footer_seccion">
@@ -227,6 +201,5 @@
             <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
         </section>
     </footer>
-
 </body>
 </html>
