@@ -7,6 +7,7 @@
     --color6: #39b54a;
     --color7: #000000;
     --color8: #fff;
+    --color_envio: #0022AA;
 }
 
 * {
@@ -278,6 +279,10 @@ main{
     font-size: 2rem;
 }
 
+.seccion_icono:hover{
+    color: var(--color6);
+}
+
 .seccion_titulo{
     font-size: 14px;
 }
@@ -290,6 +295,178 @@ main{
     background-color: var(--color8);
     text-align: center;
     padding: 0 30px 40px 30px;
+}
+
+
+/* ----------------- REGISTRO ----------------- */
+/* Fondo del formulario */
+.register_body{
+    background-color: var(--color1);
+    margin: auto;
+}
+
+.register_main{
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    background-color: var(--color1);
+    padding: 10px 0;
+}
+
+/*Cuerpo del formulario*/
+.formulario{
+    width: 460px;
+    height: 100%;
+    background-color: var(--color5);
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Registrate */
+.formulario_titulo{
+    color: var(--color7);
+    font-size: 40px;
+    padding: 10px 0;
+}
+
+/* Nombre | Apellido | Email | Contraseña */
+.formulario_input{
+    width: 100%;
+    padding: 10px 0;
+}
+.input{
+    width: 70%;
+    height: 40px;
+    border-radius: 5px;
+    text-align: left;
+    border: 0;
+    padding-left: 8px;
+}
+
+/* Enviar | Cancelar */
+.formulario_boton{
+    padding: 10px 0;
+    background-color: var(--color5);
+}
+.boton{
+    width: 70%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: var(--color3);
+    color: var(--color8);
+    border: 0;
+}
+.boton_cancelar{
+    width: 70%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: var(--color4);
+    color: var(--color8);
+    border: 0;
+}
+
+/* ¿Ya eres miembro? | Inicia tu sesion */
+.formulario_foot{
+    color: var(--color7);
+    padding: 20px 0 20px 0;
+    text-align: center;
+    align-items: center;
+}
+.formulario_foot a{
+    text-decoration: none;
+    color: var(--color7);
+    padding: 10px 0 10px 0;
+}
+
+/* Perfil de usuario*/
+.seccion_perfil{
+    width: 70%;
+    margin: auto;
+}
+.perfil_opciones{
+    padding: 10px 0;
+    margin: auto;
+    width: 80%;
+    text-align: left;
+}
+
+/* Fecha */
+.seccion_fecha{
+    width: 70%;
+    margin: auto;
+    padding: 15px 0;
+    display: grid;
+}
+.input_fecha{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    text-align: left;
+    border: 0;
+    padding-left: 8px;
+}
+
+/* Intereses */
+.seccion_intereses{
+    width: 70%;
+    margin: auto;
+}
+.intereses_opciones{
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    padding: 10px 0;
+}
+
+/* Subitulos label*/
+.formulario_subtitulos{
+    font-size: 16px;
+    text-align: left;
+    padding: 10px 0;
+}
+
+/* ----------------- LOGIN ----------------- */
+.body_formulario{
+    background-color: var(--color1);
+}
+
+.login_main{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    background-color: var(--color1);
+}
+
+/*Cuerpo del formulario login*/
+.login_formulario{
+    width: 100%;
+    height: 100%;
+    background-color: var(--color5);
+}
+
+/* Nombre de Usuario | Contraseña | Enviar */
+.input_login{
+    width: 75%;
+    height: 40px;
+    border-radius: 5px;
+    text-align: left;
+    padding-left: 8px;
+    border: 0;
+    max-width: 900px;
+}
+
+/* Enviar */
+.boton_login{
+    width: 75%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: var(--color3);
+    color: var(--color8);
+    border: 1px solid var(--color7);
+    border: 0;
+    max-width: 900px;
 }
 
 
@@ -465,14 +642,12 @@ main{
 
     /*FOOTER*/
     .contenedor_footer{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        padding: 30px 100px;
-        grid-gap: 30px;
+        display: flex;
+        padding: 30px;
     }
 
     .footer_seccion{
-        width: 276px;
+        width: 100%;
     }
 
     .footer_seccion:nth-child(3){
@@ -484,6 +659,7 @@ main{
     }
     
     .seccion_parrafo{
+        text-align: center;
         font-size: 14px;
     }
     
