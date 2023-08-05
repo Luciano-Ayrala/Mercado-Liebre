@@ -11,15 +11,13 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/e40819418a.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="body_login">
     <header>
         <section class="contenedor_header">
             <img src="img/logo-mercado-liebre.svg" alt="Logo" class="header_logo">
             <div class="header_buscador">
                 <button type="text" class="buscador_barra">Buscar productos, marcas</button>
-                <div class="buscador_logo">
-                    <i class="fas fa-search"></i>
-                </div>
+                <button type="submit" class="buscador_logo"><i class="fas fa-search"></i></button>
             </div>
             <div class="header_cuotas">
                 <i class="fas fa-hand-holding-usd"></i>
@@ -36,11 +34,11 @@
                 </ul>
                 <ul class="lista">
                     <li>
-                        <a href="/views/register.html">Creá tu cuenta</a>
+                        <a href="/register">Creá tu cuenta</a>
                         <div><i class="fas fa-id-card"></i></div>
                     </li>
                     <li>
-                        <a href="">Ingresá</a>
+                        <a href="/login">Ingresá</a>
                         <div><i class="fas fa-sign-in-alt"></i></div>
                     </li>
                     <li>
@@ -57,21 +55,23 @@
         </section>
     </header>
     
-    <main class="login_main">
-        <form action="" class="login_formulario">
-            <div class="formulario_input">
+    <main class="main_login">
+        <form action="/login.html" method="post" class="login_formulario">
+            <div class="login_formulario_input">
                 <input type="text" name="user" placeholder="Nombre de usuario" class="input_login">
             </div>
-            <div class="formulario_input">
+            <div class="login_formulario_input">
                 <input type="password" name="password" placeholder="Contraseña" class="input_login">
             </div>
-            <div class="formulario_boton">
-                <input type="submit" name="register" value="Enviar" class="boton_login">
+            <div class="login_formulario_input">
+                <button class="boton_login">
+                    <a href="/">Enviar</a>
+                </button>
             </div>
         </form>
     </main>
 
-    <footer>
+    <footer class="footer_login">
         <section class="contenedor_footer">
             <section class="footer_seccion">
                 <div class="seccion_icono">

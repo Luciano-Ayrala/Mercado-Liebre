@@ -13,7 +13,7 @@
 </head>
 <body class="register_body">
     <main class="register_main">
-        <form action="" class="formulario">
+        <form action="/register.html" method="post" class="formulario">
             <h1 class="formulario_titulo">Regístrate</h1>
             <div class="formulario_input">
                 <input type="text" name="complete_name" placeholder="Nombre y Apellido" class="input">
@@ -71,11 +71,12 @@
             <div class="formulario_input">
                 <input type="password" name="password" placeholder="Confirmar Contraseña" class="input">
             </div>
-            <div class="formulario_boton">
-                <button type="submit" class="boton">Enviar</button>
-            </div>
-            <div class="formulario_boton">
-                <button type="reset" class="boton_cancelar">Cancelar</button>
+            <div class="formulario_botones">
+                <button type="submit" class="boton_enviar">Enviar</button>
+                <button type="reset" class="boton_borrar">Borrar</button>
+                <button class="boton_ingresa">
+                    <a href="/">Ingresá</a>
+                </button>
             </div>
         </form>
     </main>

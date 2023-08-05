@@ -72,7 +72,7 @@ header {
 .buscador_logo {
     background-color: var(--color8);
     width: 20px;
-    height: 39px;
+    height: 30px;
     font-size: 16px;
     text-align: center;
     justify-content: center;
@@ -190,7 +190,6 @@ main{
     border: 1px solid #ebebeb;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 0px 25px -10px #000000;
     margin: auto;
     margin-top: 10px;
 }
@@ -344,26 +343,56 @@ main{
     padding-left: 8px;
 }
 
-/* Enviar | Cancelar */
-.formulario_boton{
+/* Enviar | Cancelar | Ingresa*/
+.formulario_botones{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
     padding: 10px 0;
-    background-color: var(--color5);
+    width: 280px;
+    grid-gap: 20px;
 }
-.boton{
-    width: 70%;
-    height: 40px;
-    border-radius: 5px;
-    background-color: var(--color3);
-    color: var(--color8);
-    border: 0;
-}
-.boton_cancelar{
-    width: 70%;
+
+.boton_enviar{
+    width: 100px;
     height: 40px;
     border-radius: 5px;
     background-color: var(--color4);
     color: var(--color8);
     border: 0;
+    margin: auto;
+}
+
+.boton_enviar:hover{
+    background-color: var(--color_envio);
+}
+
+.boton_borrar{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: var(--color4);
+    color: var(--color8);
+    border: 0;
+    margin: auto;
+}
+
+.boton_ingresa{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: var(--color2);
+    color: var(--color8);
+    border: 0;
+    margin: auto;
+}
+
+.boton_ingresa:nth-child(3){
+    grid-column-start: span 2;
+}
+
+.boton_ingresa a{
+    color: var(--color8);
 }
 
 /* ¿Ya eres miembro? | Inicia tu sesion */
@@ -427,26 +456,28 @@ main{
 }
 
 /* ----------------- LOGIN ----------------- */
-.body_formulario{
-    background-color: var(--color1);
-}
 
-.login_main{
+.main_login{
     width: 100%;
+    height: 59vh;
     text-align: center;
     justify-content: center;
     margin: auto;
-    background-color: var(--color1);
+    background-color: var(--color5);
 }
 
 /*Cuerpo del formulario login*/
 .login_formulario{
     width: 100%;
-    height: 100%;
     background-color: var(--color5);
 }
 
-/* Nombre de Usuario | Contraseña | Enviar */
+.login_formulario_input{
+    width: 100%;
+    padding: 20px 0;
+}
+
+/* Nombre de Usuario | Contraseña*/
 .input_login{
     width: 75%;
     height: 40px;
@@ -467,6 +498,10 @@ main{
     border: 1px solid var(--color7);
     border: 0;
     max-width: 900px;
+}
+
+.boton_login a{
+    color: var(--color8);
 }
 
 
@@ -634,6 +669,11 @@ main{
 
     .productos_articulos {
         width: 300px;
+    }
+
+    
+    .productos_articulos:hover{
+        box-shadow: 0px 0px 25px -10px #000000;
     }
 
     .articulo_camion{
